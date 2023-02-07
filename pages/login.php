@@ -16,58 +16,26 @@ if (isset($_POST['submit'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login | Cycleez</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="../assets/css/fontpack.css">
         <script src="https://kit.fontawesome.com/40363c613f.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../assets/semanticui/semantic.min.css">
     </head>
-    <style>
-    .ui.middle.center.aligned.grid {
-      height: 100%;
-    }
-    .column {
-      max-width: 450px;
-      margin-top: 15%;
-    }
-  </style>
-    <body style="background-color: teal;">
-         <div class="ui middle center aligned grid">
-    <div class="column">
-        <h2 class="ui inverted header  ">
-           <div class="content">
-             Cycleez <i class="fa-solid fa-leaf"></i>
-           </div> 
-        </h2>
-      <div class="ui inverted header">
-        <div class="content">
-          Log-in to your account
-        </div>
-      </div>
-  
-      <form class="ui large form" action="" method="post">
-        <div class="ui stacked segment">
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="user icon"></i>
-              <input type="text" name="email" placeholder="E-mail address">
+    <body class="bg-teal-800">
+         <div class="container w-1/3 absolute left-1/3 top-1/3">
+          <h4 class="text-center font-sans text-3xl p-1 text-white">Rtrash<i class="fa-solid fa-leaf"></i></h4>
+          <div class="mt-10">
+            <form action="" method="post">
+                <input class="block mb-2.5 mx-auto w-4/6 p-1" type="email" name="email" id="email" placeholder="Email" style="border: 1px solid gray;">
+                <input class="block mb-2.5 mx-auto w-4/6 p-1" type="password" name="password" id="password" placeholder="Password" style="border: 1px solid gray;">
+                <button class="block text-white mb-3 p-1 mx-auto mt-5 w-4/6 bg-teal-600 hover:bg-teal-700 hover:border-white hover:border-2" name="submit" type="submit">Login</button>
+            </form>
             </div>
-          </div>
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="lock icon"></i>
-              <input type="password" name="password" placeholder="Password">
-            </div>
-          </div>
-          <button class="ui fluid large teal submit button" name="submit" type="submit" value="submit">Login</button>
-        </div>
-      </form>
-    </div>
-  </div>
-        <script src="../assets/semanticui/semantic.min.js"></script>
+         </div>
     </body>
 
 </html>
